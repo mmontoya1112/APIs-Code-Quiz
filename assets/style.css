@@ -52,3 +52,13 @@ h2 {
 .hidden {
     display: none;
 }
+
+.btn {
+    font-size: 3rem;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: bisque;
+    background-color: rgb(127, 67, 182);
+    border-radius: 5px;
+}
