@@ -20,27 +20,27 @@ let questions = [
         answer: 1,
     },
     {
-        question: 'what does API stand for?',
-        choice1: 'Application programming interface',
-        choice2: 'Apple prgramming interface',
+        question: 'what does API stad for?',
+        choice1: 'Applicatin programming interface',
+        choice2: 'Apple prgraming interface',
         choice3: 'Application potato interface',
-        choice4: 'Apple potato interface',
+        choice4: 'Apple potto interface',
         answer: 1,
     },   
     {
-        question: 'what does API stand for?',
-        choice1: 'Application programming interface',
-        choice2: 'Apple prgramming interface',
-        choice3: 'Application potato interface',
-        choice4: 'Apple potato interface',
+        question: 'what does PI stand for?',
+        choice1: 'Application programmig interface',
+        choice2: 'Apple prgramming intrface',
+        choice3: 'Application potao interface',
+        choice4: 'Apple potato inerface',
         answer: 1,
     },   
     {
-        question: 'what does API stand for?',
-        choice1: 'Application programming interface',
-        choice2: 'Apple prgramming interface',
-        choice3: 'Application potato interface',
-        choice4: 'Apple potato interface',
+        question: 'what does API sand for?',
+        choice1: 'Appliation programming interface',
+        choice2: 'Appl prgramming interface',
+        choice3: 'Appication potato interface',
+        choice4: 'Aple potato interface',
         answer: 1,
     }
 ]
@@ -48,7 +48,7 @@ let questions = [
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 4
 
-startGame = () => {
+startQuiz = () => {
     questionCounter = 0
     score = 0
     availableQuestions = [...questions]
@@ -70,17 +70,19 @@ getNewQuestion = () => {
         currentQuestion = availableQuestions[questionsIndex]
 /* knows what question is being asked */
         question.innerText = currentQuestion.question
-
+console.log(choices)
         choices.forEach(choice => {
             const number = choice.dataset['number']
             choice.innerText = currentQuestion['choice' + number]
+            console.log(currentQuestion['choice' + number])
         })
         availableQuestions.splice(questionsIndex, 1)
 
         acceptingAnswers = true
-   
-}
 
+
+}
+console.log(choices.forEach)
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return
@@ -109,4 +111,4 @@ incrementScore = num => {
     scoreText.innerText = score
 }
 
-startGame()
+startQuiz()

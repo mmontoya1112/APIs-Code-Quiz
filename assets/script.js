@@ -1,4 +1,4 @@
-var startQuiz = document.getElementById("start-button");
+/*var startQuiz = document.getElementById("start-button");
 var viewHigh = document.getElementById("view-high-scores");
 var quizScores = document.getElementById("scores");
 var quizQuestion = document.getElementById("question");
@@ -23,4 +23,4 @@ startQuiz.addEventListener("click", function(){
     }, 1000);
 
     console.log(countdown);
-});
+}); */
