@@ -1,5 +1,5 @@
 const question = document.querySelector('#question');
-const choices = Array.from(document.querySelectorAll('choice-text'));
+const choices = Array.from(document.querySelectorAll('#choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
@@ -20,7 +20,7 @@ let questions = [
         answer: 1,
     },
     {
-        question: 'what does API stad for?',
+        question: 'what does hjgjhghj stad for?',
         choice1: 'Applicatin programming interface',
         choice2: 'Apple prgraming interface',
         choice3: 'Application potato interface',

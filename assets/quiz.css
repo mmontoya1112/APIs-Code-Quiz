@@ -34,7 +34,7 @@ body{
     background: linear-gradient(30deg, rgb(120, 206, 120) 0%,rgb(120, 206, 120)100%);
 }
 
-.correct {
+.incorrect {
     background: linear-gradient(30deg, rgb(233, 93, 93) 0%,rgb(233, 93, 93)100%);
 }
 
