@@ -20,27 +20,27 @@ let questions = [
         answer: 1,
     },
     {
-        question: 'what does hjgjhghj stad for?',
+        question: 'what does API stand for?',
         choice1: 'Applicatin programming interface',
-        choice2: 'Apple prgraming interface',
+        choice2: 'Apple papaya interface',
         choice3: 'Application potato interface',
         choice4: 'Apple potto interface',
         answer: 1,
     },   
     {
-        question: 'what does PI stand for?',
+        question: 'what does API stand for?',
         choice1: 'Application programmig interface',
-        choice2: 'Apple prgramming intrface',
-        choice3: 'Application potao interface',
+        choice2: 'Apple prgramming interstellar',
+        choice3: 'Application parrot interface',
         choice4: 'Apple potato inerface',
         answer: 1,
     },   
     {
         question: 'what does API sand for?',
         choice1: 'Appliation programming interface',
-        choice2: 'Appl prgramming interface',
+        choice2: 'Ancient prgramming interface',
         choice3: 'Appication potato interface',
-        choice4: 'Aple potato interface',
+        choice4: 'Ash pluto interface',
         answer: 1,
     }
 ]
@@ -83,7 +83,6 @@ console.log(choices)
 
 
 }
-console.log(choices.forEach)
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return
