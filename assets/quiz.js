@@ -59,7 +59,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/end.html')
+        return window.location.assign('/assets/scores.html')
     }
 /*calculate what q you are on and correspond that w percent we have left */
         questionCounter++
